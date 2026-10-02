@@ -15,7 +15,7 @@ A reproducible county-level study of where diagnosed diabetes, obesity, physical
 - **Data:** CDC PLACES 2025 release and U.S. Census Bureau cartographic boundaries
 - **Deliverables:** validated analysis pipeline, county atlas, statistical tables, SAS companion program, and documented limitations
 
-Repository: `gorkira28/texas-diabetes-vulnerability-atlas`
+Repository: [gorkira28/texas-diabetes-vulnerability-atlas](https://github.com/gorkira28/texas-diabetes-vulnerability-atlas)
 
 ## Technical toolkit
 
@@ -34,4 +34,3 @@ Repository: `gorkira28/texas-diabetes-vulnerability-atlas`
 
 - [LinkedIn](https://www.linkedin.com/in/dr-kira-gor/)
 - Email: [gor.kira.28@gmail.com](mailto:gor.kira.28@gmail.com)
-
