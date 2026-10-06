@@ -4,7 +4,18 @@ I’m a clinician-trained epidemiologist and healthcare data analyst working at 
 
 My portfolio focuses on turning public-health data into clear, defensible evidence through statistical analysis, geographic methods, and thoughtful communication.
 
-## Current portfolio project
+## Featured portfolio projects
+
+### Hidden Hypertension: NHANES Awareness-Gap Analysis
+
+A national, complex-survey analysis of measured blood pressure, diagnosis awareness, medication use, and control among 7,938 U.S. adults.
+
+- **Methods:** survey-weighted prevalence, Taylor confidence intervals, domain estimation, survey logistic regression, threshold sensitivity, QA/QC
+- **Tools:** SAS, Python
+- **Data:** CDC/NCHS NHANES 2017–March 2020 pre-pandemic public-use files
+- **Result:** 39.8% of adults meeting the primary proxy reported no prior diagnosis
+
+Repository: [gorkira28/nhanes-hypertension-awareness-gap](https://github.com/gorkira28/nhanes-hypertension-awareness-gap)
 
 ### Texas Diabetes Vulnerability Atlas
 
