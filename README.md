@@ -8,7 +8,19 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 ## Featured analytics projects
 
-### 1. Pertussis Surveillance Priorities — SQL + QGIS
+### 1. Clinical Trial Results Transparency — SAS + Python
+
+**Decision question:** How often are summary results available for completed Phase 2–4 type 2 diabetes trials after allowing at least 12 months from primary completion?
+
+- Analyzed 865 eligible ClinicalTrials.gov records from a reproducible API snapshot
+- Built a Python acquisition, cohort-construction, statistical-analysis, QA, and visualization workflow
+- Added an independent SAS validation program with statistical testing and logistic regression
+- Found posted summary results for 52.0% of eligible trials, with clear limits on causal and legal interpretation
+
+**Tools:** SAS, Python, ClinicalTrials.gov API, biostatistics, QA/QC  
+**View:** [Repository](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting) · [Dashboard](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting/blob/main/outputs/figures/trial_results_transparency_dashboard.png)
+
+### 2. Pertussis Surveillance Priorities — SQL + QGIS
 
 **Decision question:** Where do high population-adjusted incidence and high operational case burden point to different surveillance priorities?
 
@@ -20,7 +32,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** DuckDB SQL, QGIS, epidemiologic surveillance, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/pertussis-2025-surveillance-priorities) · [Dashboard](https://github.com/gorkira28/pertussis-2025-surveillance-priorities/blob/main/outputs/figures/pertussis_surveillance_dashboard.svg)
 
-### 2. Hidden Hypertension — SAS + Python
+### 3. Hidden Hypertension — SAS + Python
 
 **Decision question:** How large is the gap between measured hypertension and reported diagnosis awareness among U.S. adults?
 
@@ -32,7 +44,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, NHANES, complex-survey methods  
 **View:** [Repository](https://github.com/gorkira28/nhanes-hypertension-awareness-gap)
 
-### 3. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
+### 4. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
 
 **Decision question:** Where do diabetes burden and barriers to health overlap across Texas counties?
 
