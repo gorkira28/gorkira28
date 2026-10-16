@@ -8,7 +8,19 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 ## Featured analytics projects
 
-### 1. Clinical Trial Results Transparency — SAS + Python
+### 1. Emergency Department Throughput — Python + DuckDB SQL
+
+**Decision question:** Where do publicly reported emergency-department time measures indicate operational benchmarking priorities, and how does reporting completeness limit interpretation?
+
+- Analyzed CMS Care Compare data for 4,658 facilities and six ED measures
+- Built a reproducible Python acquisition workflow with date-stamped extracts and SHA-256 manifests
+- Used DuckDB SQL for transformation, facility-level joins, and explicit QA checks
+- Found a 154-minute median across 4,052 reporting hospitals and a substantial psychiatric-measure reporting gap
+
+**Tools:** Python, DuckDB SQL, CMS Care Compare, bootstrap inference, healthcare operations, QA/QC  
+**View:** [Repository](https://github.com/gorkira28/cms-ed-throughput-benchmarking) · [Dashboard](https://github.com/gorkira28/cms-ed-throughput-benchmarking/blob/main/outputs/figures/cms_ed_throughput_dashboard.png)
+
+### 2. Clinical Trial Results Transparency — SAS + Python
 
 **Decision question:** How often are summary results available for completed Phase 2–4 type 2 diabetes trials after allowing at least 12 months from primary completion?
 
@@ -20,7 +32,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, ClinicalTrials.gov API, biostatistics, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting) · [Dashboard](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting/blob/main/outputs/figures/trial_results_transparency_dashboard.png)
 
-### 2. Pertussis Surveillance Priorities — SQL + QGIS
+### 3. Pertussis Surveillance Priorities — SQL + QGIS
 
 **Decision question:** Where do high population-adjusted incidence and high operational case burden point to different surveillance priorities?
 
@@ -32,7 +44,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** DuckDB SQL, QGIS, epidemiologic surveillance, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/pertussis-2025-surveillance-priorities) · [Dashboard](https://github.com/gorkira28/pertussis-2025-surveillance-priorities/blob/main/outputs/figures/pertussis_surveillance_dashboard.svg)
 
-### 3. Hidden Hypertension — SAS + Python
+### 4. Hidden Hypertension — SAS + Python
 
 **Decision question:** How large is the gap between measured hypertension and reported diagnosis awareness among U.S. adults?
 
@@ -44,7 +56,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, NHANES, complex-survey methods  
 **View:** [Repository](https://github.com/gorkira28/nhanes-hypertension-awareness-gap)
 
-### 4. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
+### 5. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
 
 **Decision question:** Where do diabetes burden and barriers to health overlap across Texas counties?
 
