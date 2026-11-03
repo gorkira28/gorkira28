@@ -59,16 +59,17 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, CDC/NCHS mortality surveillance, log-linear trends, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/provisional-overdose-drug-signals) · [Dashboard](https://github.com/gorkira28/provisional-overdose-drug-signals/blob/main/outputs/figures/overdose_drug_signal_dashboard.png)
 
-### 5. Emergency Department Throughput — Python + DuckDB SQL
+### 5. Emergency Department Throughput — SAS + Python + DuckDB SQL
 
 **Decision question:** Where do publicly reported emergency-department time measures indicate operational benchmarking priorities, and how does reporting completeness limit interpretation?
 
 - Analyzed CMS Care Compare data for 4,658 facilities and six ED measures
 - Built a reproducible Python acquisition workflow with date-stamped extracts and SHA-256 manifests
 - Used DuckDB SQL for transformation, facility-level joins, and explicit QA checks
-- Found a 154-minute median across 4,052 reporting hospitals and a substantial psychiatric-measure reporting gap
+- Added a substantive SAS workflow for typed import, validation, grouped analysis, reporting, and Python cross-checks
+- Found a 69-minute median difference between very-high- and low-volume ED groups (95% bootstrap CI: 65–75)
 
-**Tools:** Python, DuckDB SQL, CMS Care Compare, bootstrap inference, healthcare operations, QA/QC  
+**Tools:** SAS, Python, DuckDB SQL, CMS Care Compare, bootstrap inference, healthcare operations, QA/QC<br>
 **View:** [Repository](https://github.com/gorkira28/cms-ed-throughput-benchmarking) · [Dashboard](https://github.com/gorkira28/cms-ed-throughput-benchmarking/blob/main/outputs/figures/cms_ed_throughput_dashboard.png)
 
 ### 6. Clinical Trial Results Transparency — SAS + Python
