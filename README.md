@@ -8,7 +8,21 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 ## Featured analytics projects
 
-### 1. CMS Birthing-Friendly Designation Density — DuckDB SQL + Python + GIS
+### 1. RESP-NET Age-Specific Respiratory Hospitalization Burden — SAS + Python
+
+**Decision question:** Which age groups carried the greatest cumulative hospitalization burden from COVID-19, influenza, and RSV during the 2025–26 respiratory season, and which virus drove each age profile?
+
+- Analyzed 53 weeks of CDC RESP-NET observed cumulative rates across three viruses and 11 mutually exclusive age groups
+- Built a reproducible Python acquisition, QA, analysis, and visualization workflow with a substantive SAS validation program
+- Found the highest combined cumulative rates among adults aged 85+ (1,339 per 100,000) and infants younger than 1 year (951 per 100,000)
+- Showed that RSV accounted for 71% of the infant rate while influenza was the largest component from ages 5–11 through 85+
+- Reproduced CDC's separately published combined series within 1.0 per 100,000 for every age group
+
+**Tools:** SAS, Python, CDC RESP-NET, surveillance epidemiology, Spearman analysis, QA/QC
+
+**View:** [Repository](https://github.com/gorkira28/resp-net-age-hospitalization-burden) · [Portfolio case study](https://gorkira28.github.io/#work)
+
+### 2. CMS Birthing-Friendly Designation Density — DuckDB SQL + Python + GIS
 
 **Decision question:** Where is the CMS Birthing-Friendly designation most sparse after accounting for the population of women ages 15–44?
 
@@ -21,7 +35,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 **View:** [Repository](https://github.com/gorkira28/cms-birthing-friendly-access) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 2. County Behavioral Health Priority Signals — DuckDB SQL + Python + GIS
+### 3. County Behavioral Health Priority Signals — DuckDB SQL + Python + GIS
 
 **Decision question:** Where do model-based county estimates suggest that behavioral-health need and insurance barriers overlap strongly enough to justify deeper local review?
 
@@ -34,7 +48,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 **View:** [Repository](https://github.com/gorkira28/cdc-places-behavioral-health-priorities) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 3. CKD Awareness Gap Among Adults With Diabetes — SAS + Python
+### 4. CKD Awareness Gap Among Adults With Diabetes — SAS + Python
 
 **Decision question:** How much laboratory-defined CKD is detectable among U.S. adults with diagnosed diabetes, and how often do affected adults report awareness of kidney disease?
 
@@ -47,7 +61,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 **View:** [Repository](https://github.com/gorkira28/nhanes-diabetes-ckd-awareness-gap) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 4. Nursing Home Staffing and Quality Signals — R + DuckDB SQL
+### 5. Nursing Home Staffing and Quality Signals — R + DuckDB SQL
 
 **Decision question:** Do staffing capacity and nursing-staff turnover align with low CMS overall ratings after facility and market context are considered?
 
@@ -60,7 +74,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 
 **View:** [Repository](https://github.com/gorkira28/cms-nursing-home-staffing-quality-gap) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 5. Provisional Drug-Involved Overdose Signals — SAS + Python
+### 6. Provisional Drug-Involved Overdose Signals — SAS + Python
 
 **Decision question:** Which drug-involvement signals changed most in the latest comparable annual periods, and where did HHS regional patterns differ from the national direction?
 
@@ -72,7 +86,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, CDC/NCHS mortality surveillance, log-linear trends, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/provisional-overdose-drug-signals) · [Dashboard](https://github.com/gorkira28/provisional-overdose-drug-signals/blob/main/outputs/figures/overdose_drug_signal_dashboard.png)
 
-### 6. Emergency Department Throughput — SAS + Python + DuckDB SQL
+### 7. Emergency Department Throughput — SAS + Python + DuckDB SQL
 
 **Decision question:** Where do publicly reported emergency-department time measures indicate operational benchmarking priorities, and how does reporting completeness limit interpretation?
 
@@ -85,7 +99,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, DuckDB SQL, CMS Care Compare, bootstrap inference, healthcare operations, QA/QC<br>
 **View:** [Repository](https://github.com/gorkira28/cms-ed-throughput-benchmarking) · [Dashboard](https://github.com/gorkira28/cms-ed-throughput-benchmarking/blob/main/outputs/figures/cms_ed_throughput_dashboard.png)
 
-### 7. Clinical Trial Results Transparency — SAS + Python
+### 8. Clinical Trial Results Transparency — SAS + Python
 
 **Decision question:** How often are summary results available for completed Phase 2–4 type 2 diabetes trials after allowing at least 12 months from primary completion?
 
@@ -97,7 +111,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, ClinicalTrials.gov API, biostatistics, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting) · [Dashboard](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting/blob/main/outputs/figures/trial_results_transparency_dashboard.png)
 
-### 8. Pertussis Surveillance Priorities — SQL + QGIS
+### 9. Pertussis Surveillance Priorities — SQL + QGIS
 
 **Decision question:** Where do high population-adjusted incidence and high operational case burden point to different surveillance priorities?
 
@@ -109,7 +123,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** DuckDB SQL, QGIS, epidemiologic surveillance, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/pertussis-2025-surveillance-priorities) · [Dashboard](https://github.com/gorkira28/pertussis-2025-surveillance-priorities/blob/main/outputs/figures/pertussis_surveillance_dashboard.svg)
 
-### 9. Hidden Hypertension — SAS + Python
+### 10. Hidden Hypertension — SAS + Python
 
 **Decision question:** How large is the gap between measured hypertension and reported diagnosis awareness among U.S. adults?
 
@@ -121,7 +135,7 @@ I’m a clinician-trained epidemiologist and healthcare data analyst who turns s
 **Tools:** SAS, Python, NHANES, complex-survey methods  
 **View:** [Repository](https://github.com/gorkira28/nhanes-hypertension-awareness-gap)
 
-### 10. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
+### 11. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
 
 **Decision question:** Where do diabetes burden and barriers to health overlap across Texas counties?
 
