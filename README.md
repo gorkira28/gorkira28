@@ -1,158 +1,92 @@
 # Hi, I’m Kira Gor, BDS, MPH
 
-I’m a clinician-trained epidemiologist and healthcare data analyst who turns surveillance, clinical, observational, and geospatial data into clear, reproducible evidence for public-health decisions.
+I’m a clinician-trained epidemiologist and healthcare data analyst who turns surveillance, clinical, observational, regulatory, and geospatial data into clear, reproducible evidence for public-health decisions.
 
-**[Explore my portfolio website](https://gorkira28.github.io/)** · [LinkedIn](https://www.linkedin.com/in/dr-kira-gor/) · [Email](mailto:gor.kira.28@gmail.com)
+**[Explore my complete portfolio](https://gorkira28.github.io/)** · [LinkedIn](https://www.linkedin.com/in/dr-kira-gor/) · [Email](mailto:gor.kira.28@gmail.com)
 
 > Open to healthcare data analyst, epidemiologist, biostatistician, clinical data analyst, and related opportunities with employers able to support future U.S. work authorization.
 
 ## Featured analytics projects
 
-### 1. RESP-NET Age-Specific Respiratory Hospitalization Burden — SAS + Python
+### 1. FDA Medical-Device Recall Response Timelines — SAS + Python + DuckDB SQL
 
-**Decision question:** Which age groups carried the greatest cumulative hospitalization burden from COVID-19, influenza, and RSV during the 2025–26 respiratory season, and which virus drove each age profile?
+**Decision question:** How much time elapsed between firm initiation of a medical-device recall and publication in an FDA Enforcement Report?
 
-- Analyzed 53 weeks of CDC RESP-NET observed cumulative rates across three viruses and 11 mutually exclusive age groups
-- Built a reproducible Python acquisition, QA, analysis, and visualization workflow with a substantive SAS validation program
-- Found the highest combined cumulative rates among adults aged 85+ (1,339 per 100,000) and infants younger than 1 year (951 per 100,000)
-- Showed that RSV accounted for 71% of the infant rate while influenza was the largest component from ages 5–11 through 85+
-- Reproduced CDC's separately published combined series within 1.0 per 100,000 for every age group
+- Analyzed 11,005 recall records initiated during 2022–2025
+- Built a reproducible openFDA acquisition pipeline, typed DuckDB SQL layer, Python analysis, and automated QA
+- Found median initiation-to-report times of 48 days for Class I, 50 for Class II, and 62 for Class III records
+- Distinguished a statistically detectable class difference from its small practical effect size (epsilon-squared = 0.011)
+- Added a substantive SAS validation program with explicit rank, tie-correction, effect-size, reporting, and cross-software comparison steps
 
-**Tools:** SAS, Python, CDC RESP-NET, surveillance epidemiology, Spearman analysis, QA/QC
+**Tools:** SAS, Python, DuckDB SQL, openFDA, nonparametric statistics, regulatory data, QA/QC  
+**View:** [Repository](https://github.com/gorkira28/fda-device-recall-response-timelines) · [Portfolio case study](https://gorkira28.github.io/#work)
 
+### 2. RESP-NET Age-Specific Respiratory Hospitalization Burden — SAS + Python
+
+**Decision question:** Which age groups carried the greatest cumulative hospitalization burden from COVID-19, influenza, and RSV during the 2025–26 respiratory season?
+
+- Analyzed 53 weeks of CDC RESP-NET observed cumulative rates across three viruses and 11 age groups
+- Found the highest combined rates among adults aged 85+ and infants younger than 1 year
+- Showed that RSV accounted for 71% of the infant rate while influenza dominated most older age groups
+- Reconciled the component series to CDC’s separately published combined series
+
+**Tools:** SAS, Python, CDC RESP-NET, surveillance epidemiology, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/resp-net-age-hospitalization-burden) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 2. CMS Birthing-Friendly Designation Density — DuckDB SQL + Python + GIS
+### 3. Emergency Department Throughput Benchmarking — SAS + Python + DuckDB SQL
 
-**Decision question:** Where is the CMS Birthing-Friendly designation most sparse after accounting for the population of women ages 15–44?
+**Decision question:** Where do publicly reported emergency-department time measures indicate operational benchmarking priorities?
 
-- Joined the July 2026 CMS Hospital General Information release to Census Vintage 2025 age/sex estimates
-- Built a typed DuckDB SQL cleaning layer, exact Poisson intervals, automated QA, and QGIS-ready GeoJSON
-- Identified 2,256 designated hospitals across the 50 states and Washington, D.C., or 3.33 per 100,000 women ages 15–44
-- Found state density ranging from 2.01 in Nevada to 9.08 in Wyoming while explicitly separating structural designation from clinical safety and geographic access
+- Analyzed CMS Care Compare data for 4,658 facilities and six ED measures
+- Used DuckDB SQL for transformation, facility joins, and explicit QA checks
+- Added a substantive SAS workflow for import, validation, grouped analysis, and reporting
+- Found a 69-minute median difference between very-high- and low-volume ED groups (95% bootstrap CI: 65–75)
 
-**Tools:** DuckDB SQL, Python, GeoPandas, QGIS-ready GIS, CMS, Census, QA/QC
-
-**View:** [Repository](https://github.com/gorkira28/cms-birthing-friendly-access) · [Portfolio case study](https://gorkira28.github.io/#work)
-
-### 3. County Behavioral Health Priority Signals — DuckDB SQL + Python + GIS
-
-**Decision question:** Where do model-based county estimates suggest that behavioral-health need and insurance barriers overlap strongly enough to justify deeper local review?
-
-- Ranked diagnosed depression, frequent mental distress, and lack-of-insurance estimates for 2,956 counties with complete CDC PLACES inputs
-- Built an auditable equal-weight percentile score in DuckDB SQL and joined it to Census county boundaries
-- Exported tested CSV, GeoJSON, GeoPackage, QGIS style, and publication-ready visual outputs
-- Identified 296 counties in the highest signal decile while explicitly separating planning triage from causal inference or program evaluation
-
-**Tools:** DuckDB SQL, Python, CDC PLACES, GeoPandas, QGIS-ready GIS, QA/QC
-
-**View:** [Repository](https://github.com/gorkira28/cdc-places-behavioral-health-priorities) · [Portfolio case study](https://gorkira28.github.io/#work)
+**Tools:** SAS, Python, DuckDB SQL, CMS Care Compare, bootstrap inference, QA/QC  
+**View:** [Repository](https://github.com/gorkira28/cms-ed-throughput-benchmarking) · [Dashboard](https://github.com/gorkira28/cms-ed-throughput-benchmarking/blob/main/outputs/figures/cms_ed_throughput_dashboard.png)
 
 ### 4. CKD Awareness Gap Among Adults With Diabetes — SAS + Python
 
-**Decision question:** How much laboratory-defined CKD is detectable among U.S. adults with diagnosed diabetes, and how often do affected adults report awareness of kidney disease?
+**Decision question:** How much laboratory-defined CKD is detectable among U.S. adults with diagnosed diabetes, and how often do affected adults report awareness?
 
 - Integrated five CDC/NCHS NHANES files with survey weights, strata, and PSUs
 - Derived race-free CKD-EPI 2021 eGFR and combined it with urine albumin-creatinine ratio
 - Built a complete SAS survey workflow with an independently executed Python validation analysis
-- Estimated analytic CKD in 39.3% of adults with diagnosed diabetes and an 82.0% reported-awareness gap among those with diabetes and CKD
+- Estimated analytic CKD in 39.3% of adults with diagnosed diabetes and an 82.0% awareness gap among those with diabetes and CKD
 
-**Tools:** SAS, Python, NHANES, complex-survey analysis, CKD-EPI 2021, QA/QC
-
+**Tools:** SAS, Python, NHANES, complex-survey analysis, CKD-EPI 2021, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/nhanes-diabetes-ckd-awareness-gap) · [Portfolio case study](https://gorkira28.github.io/#work)
 
 ### 5. Nursing Home Staffing and Quality Signals — R + DuckDB SQL
 
 **Decision question:** Do staffing capacity and nursing-staff turnover align with low CMS overall ratings after facility and market context are considered?
 
-- Analyzed 14,690 active nursing homes in the August 2026 CMS Provider Information file
-- Built an auditable DuckDB SQL transformation layer, Python QA and statistical cross-check, and independent R replication workflow
+- Analyzed 14,690 active nursing homes in CMS Care Compare data
 - Fit a multivariable logistic model adjusting for occupancy, case mix, bed count, ownership, and state
-- Found a 54.7% low-rating share in the lowest adjusted-staffing quartile versus 23.6% in the highest, with explicit noncausal interpretation
+- Found a 54.7% low-rating share in the lowest adjusted-staffing quartile versus 23.6% in the highest
+- Kept interpretation explicitly associational rather than causal
 
-**Tools:** R, DuckDB SQL, Python, CMS Care Compare, logistic regression, QA/QC
-
+**Tools:** R, DuckDB SQL, Python, CMS Care Compare, logistic regression, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/cms-nursing-home-staffing-quality-gap) · [Portfolio case study](https://gorkira28.github.io/#work)
 
-### 6. Provisional Drug-Involved Overdose Signals — SAS + Python
-
-**Decision question:** Which drug-involvement signals changed most in the latest comparable annual periods, and where did HHS regional patterns differ from the national direction?
-
-- Analyzed 11,088 CDC/NCHS records across 12 drug categories, 10 HHS regions, and the U.S. aggregate
-- Used non-overlapping annual snapshots to avoid treating heavily overlapping rolling periods as independent
-- Built a Python acquisition, QA, trend-analysis, and visualization workflow with an independent SAS validation program
-- Found broad national declines alongside emerging exceptions, including ketamine nationally and cocaine in Regions 8 and 9
-
-**Tools:** SAS, Python, CDC/NCHS mortality surveillance, log-linear trends, QA/QC  
-**View:** [Repository](https://github.com/gorkira28/provisional-overdose-drug-signals) · [Dashboard](https://github.com/gorkira28/provisional-overdose-drug-signals/blob/main/outputs/figures/overdose_drug_signal_dashboard.png)
-
-### 7. Emergency Department Throughput — SAS + Python + DuckDB SQL
-
-**Decision question:** Where do publicly reported emergency-department time measures indicate operational benchmarking priorities, and how does reporting completeness limit interpretation?
-
-- Analyzed CMS Care Compare data for 4,658 facilities and six ED measures
-- Built a reproducible Python acquisition workflow with date-stamped extracts and SHA-256 manifests
-- Used DuckDB SQL for transformation, facility-level joins, and explicit QA checks
-- Added a substantive SAS workflow for typed import, validation, grouped analysis, reporting, and Python cross-checks
-- Found a 69-minute median difference between very-high- and low-volume ED groups (95% bootstrap CI: 65–75)
-
-**Tools:** SAS, Python, DuckDB SQL, CMS Care Compare, bootstrap inference, healthcare operations, QA/QC<br>
-**View:** [Repository](https://github.com/gorkira28/cms-ed-throughput-benchmarking) · [Dashboard](https://github.com/gorkira28/cms-ed-throughput-benchmarking/blob/main/outputs/figures/cms_ed_throughput_dashboard.png)
-
-### 8. Clinical Trial Results Transparency — SAS + Python
-
-**Decision question:** How often are summary results available for completed Phase 2–4 type 2 diabetes trials after allowing at least 12 months from primary completion?
-
-- Analyzed 865 eligible ClinicalTrials.gov records from a reproducible API snapshot
-- Built a Python acquisition, cohort-construction, statistical-analysis, QA, and visualization workflow
-- Added an independent SAS validation program with statistical testing and logistic regression
-- Found posted summary results for 52.0% of eligible trials, with clear limits on causal and legal interpretation
-
-**Tools:** SAS, Python, ClinicalTrials.gov API, biostatistics, QA/QC  
-**View:** [Repository](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting) · [Dashboard](https://github.com/gorkira28/type-2-diabetes-trial-results-reporting/blob/main/outputs/figures/trial_results_transparency_dashboard.png)
-
-### 9. Pertussis Surveillance Priorities — SQL + QGIS
+### 6. Pertussis Surveillance Priorities — DuckDB SQL + QGIS
 
 **Decision question:** Where do high population-adjusted incidence and high operational case burden point to different surveillance priorities?
 
-- Analyzed the CDC’s 2025 provisional pertussis report across 52 reporting jurisdictions
-- Built a typed DuckDB SQL workflow with validation, ranking, threshold flags, and exportable results
+- Analyzed CDC’s 2025 provisional pertussis report across 52 reporting jurisdictions
+- Built a typed DuckDB SQL workflow with validation, ranking, and threshold flags
 - Prepared a QGIS-ready state join with explicit handling of New York State and New York City
 - Reconciled jurisdiction records exactly to the reported national total of 28,783 cases
 
-**Tools:** DuckDB SQL, QGIS, epidemiologic surveillance, QA/QC  
+**Tools:** DuckDB SQL, QGIS, infectious-disease surveillance, QA/QC  
 **View:** [Repository](https://github.com/gorkira28/pertussis-2025-surveillance-priorities) · [Dashboard](https://github.com/gorkira28/pertussis-2025-surveillance-priorities/blob/main/outputs/figures/pertussis_surveillance_dashboard.svg)
-
-### 10. Hidden Hypertension — SAS + Python
-
-**Decision question:** How large is the gap between measured hypertension and reported diagnosis awareness among U.S. adults?
-
-- Conducted a complex-survey analysis of 7,938 adults in NHANES 2017–March 2020
-- Used survey-weighted prevalence, Taylor confidence intervals, domain estimation, and survey logistic regression
-- Implemented parallel SAS and Python workflows with validation and threshold-sensitivity checks
-- Estimated that 39.8% of adults meeting the primary analytic proxy reported no prior diagnosis
-
-**Tools:** SAS, Python, NHANES, complex-survey methods  
-**View:** [Repository](https://github.com/gorkira28/nhanes-hypertension-awareness-gap)
-
-### 11. Texas Diabetes Vulnerability Atlas — Python + SAS + GIS
-
-**Decision question:** Where do diabetes burden and barriers to health overlap across Texas counties?
-
-- Integrated CDC PLACES estimates with U.S. Census cartographic boundaries
-- Built a transparent percentile-based composite using diabetes, obesity, inactivity, and insurance measures
-- Included Spearman correlation, sensitivity analysis, data-quality checks, and GIS-ready outputs
-- Preserved all 254 county boundaries and documented suppressed estimates
-
-**Tools:** Python, SAS, QGIS/ArcGIS-compatible GeoJSON, spatial analysis  
-**View:** [Repository](https://github.com/gorkira28/texas-diabetes-vulnerability-atlas) · [Portfolio case study](https://gorkira28.github.io/#work)
 
 ## Technical toolkit
 
 - **Analysis:** SAS, R, Python, SQL, SPSS, Epi Info
 - **Visualization and GIS:** ArcGIS, QGIS, Tableau, Power BI
-- **Methods:** epidemiologic study design, regression, complex-survey analysis, propensity-score methods, machine learning, reproducible analysis, QA/QC
-- **Data environments:** infectious-disease surveillance, clinical trials, observational research, REDCap, NEDSS
+- **Methods:** epidemiologic study design, regression, complex-survey analysis, propensity-score methods, nonparametric statistics, reproducible analysis, QA/QC
+- **Data environments:** infectious-disease surveillance, clinical trials, observational research, regulatory data, REDCap, NEDSS
 
 ## Selected research
 
